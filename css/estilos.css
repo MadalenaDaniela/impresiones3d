@@ -37,28 +37,33 @@ header {
 .portada {
     display: flex; 
     justify-content: space-around;
-    align-items: flex-end;
-    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    flex-wrap: nowrap;
 }
 
 .portada__logo {
-    width: 10%;
-    height: 10%; 
+    width: 10vw;
+    height: 15vh; 
 }
 
 .portada__barra {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 160%;
+    font-size: 1.8rem;
     color:white;
+    justify-content: center;
 }
 
 ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style-type: none;
 } 
 
 li {
-    display: inline;
-    margin: 10px;
+    margin: 0.5rem;
 }
 
 li a {
@@ -80,23 +85,23 @@ li a:hover {
     text-decoration: none;
     background-color: white;
     color: rgb(13, 57, 99);
-    border-radius: 5px;
+    border-radius: 0.3rem;
 }
 
 li a:active {
     text-decoration: none;
     background-color: white;
     color: rgb(13, 57, 99);
-    border-radius: 5px;
+    border-radius: 0.3rem;
 }
 
 .titulo {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: right;
     justify-content: center;
-    font-size: 270%;
+    font-size: 5rem;
     color: white;
-    padding: 15%;
+    padding: 10rem;
     background-image: url(../recursos/portada.jpeg);
     background-attachment: fixed;
 	background-position: center;
@@ -107,37 +112,37 @@ li a:active {
 .sobreNosotros {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-around;
-    margin: 5%;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 1.9;
 }
 
 .sobreNosotros__subtituloParrafo{
-    margin: 2%;
+    margin: 1rem;
     color: rgb(2, 2, 26);
 }
 
 .subtitulo {
     text-decoration: underline;
-    font-size: 30px;   
+    font-size: 1.8rem;   
 }
 
 .parrafo {
-    font-size: 25px;
+    font-size: 1.5rem;
 }
    
 .sobreNosotros__imagen {
-    border-radius: 10px;
+    border-radius: 2rem;
     border: 3px solid rgb(2, 2, 26);
-    height: 20%;
-    width: 60%;  
+    height: 50vh;
+    width: 50vw;  
 }
 
 .proyecto {
-    padding: 20px;
-    margin: 30px;
+    padding: 2rem;
+    margin: 3rem;
     text-align: center; 
     background-color: rgb(111, 111, 219, 0.6);    
 }
@@ -145,15 +150,15 @@ li a:active {
 .proyecto__titulo {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(2, 2, 26);
-    font-size: 25px; 
+    font-size: 2rem; 
 }
 
 .proyecto__link {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(2, 2, 26);
-    font-size: 25px;
+    font-size: 2rem;
     line-height: 1.9;
-    margin: 5px;
+    margin: 0.5rem;
 }
 
 h4 a {
@@ -175,16 +180,16 @@ h4 a:hover {
     text-decoration: none;
     background-color: rgb(13, 57, 99);
     color: white;
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
 }
 
 h4 a:active {
     text-decoration: none;
     background-color: rgb(13, 57, 99);
     color: white;
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
 }
 
 .footer {
@@ -195,12 +200,12 @@ h4 a:active {
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.5;
-    padding: 2%;
+    padding: 2rem;
 }
 
 .footer__redes {
     grid-area: redes;
-    font-size: 120%;
+    font-size: 1.3rem;
     text-align: center;
 }
 
@@ -211,31 +216,31 @@ a {
 a i {
     text-decoration: none;
     color: white;
-    font-size: 160%;
-    margin: 2%;
+    font-size: 2rem;
+    margin: 0.5rem;
 }
 
 a i:hover {
     color: white;
-    font-size: 180%;
+    font-size: 2.5rem;
 }
 
 .footer__ubicacion {
     grid-area: ubicacion;
-    font-size: 100%;
+    font-size: 1.3rem;
     text-align: center;
 }
 
 .iframe {
-    height: 100px;
-    width: 200px;
+    height: 10vh;
+    width: 20vw;
 }
 
 .derechos {
     grid-area: recervados;
     background-color: rgb(13, 57, 99);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 80%;
+    font-size: 1rem;
     font-style: italic;
     color: white;
     text-align: center;
@@ -243,27 +248,27 @@ a i:hover {
 
 .pagina {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 3%;  
+    margin: 2rem;  
 }
 
 .pagina__titulo {
     text-align: center;
-    font-size: 200%;
+    font-size: 2rem;
     color: rgb(2, 2, 26);
     line-height: 2.5;
 }
 
 .pagina__subtitulo {
-    font-size: 150%;
+    font-size: 1.5rem;
     background-color: rgb(111, 111, 219, 0.6);
-    padding: 1%;
+    padding: 1rem;
     line-height: 2.5;
 }
 
 .pagina__texto {
-    font-size: 130%;
+    font-size: 1.5rem;
     text-align: right;
-    margin: 10px;
+    margin: 0.5rem;
     line-height: 2.5;
 }
 
@@ -272,80 +277,84 @@ a i:hover {
     flex-direction: column;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 140%;
+    font-size: 1.3rem;
     line-height: 1.9;
-    margin: 5%;
+    background-image: url(../recursos/fondoContacto1.jpg);
+    background-size:  cover; 
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 .imput {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 100%;
-    width: 40%;
-    padding: 5px;
-    margin: 1%;
+    font-size: 1.3rem;
+    width: 40vw;
+    padding: 0.4rem;
+    margin: 0.4rem;
     background-color: ghostwhite;
     border: 1px solid ghostwhite;
-    border-radius: 5px;
+    border-radius: 0.5rem;
 }
 
 button {
     background-color: rgb(111, 111, 219);
     color: rgb(255, 255, 255);
     border: 1px solid rgb(111, 111, 219);
-    border-radius: 30px;
-    font-size: 100%;
-    padding: 1%;
-    margin: 1%;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    margin: 0.8rem;
 }
 
 button:hover {
     background-color: rgb(52, 52, 252);
     color: rgb(255, 255, 255);
     border-radius: 30px;
-    font-size: 110%;
-    padding: 1%;
+    font-size: 1.5rem;
+    margin: 0.8rem;
 }
 
 .galeria {
     display: grid;
-    margin: 3%;
+    margin: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    grid-template-areas: "galeriaTitulo galeriaTitulo galeriaTitulo"
-                         "galeriaSubtitulo galeriaSubtitulo galeriaSubtitulo"
-                         "img1 img2 img3"
-                         "img4 img5 main";   
+    grid-template-areas: "galeriaTitulo galeriaTitulo"
+                         "galeriaSubtitulo galeriaSubtitulo"
+                         "img1 img2"
+                         "img3 img4"
+                         "img5 main";   
 }
 
 .galeria__titulo {
     grid-area: galeriaTitulo;
     text-align: center;
-    font-size: 35px;
+    font-size: 2rem;
     color: rgb(2, 2, 26);
     line-height: 2.5;
 }
 
 .galeria__subtitulo {
     grid-area: galeriaSubtitulo;
-    font-size: 25px;
+    font-size: 1.5rem;
     background-color: rgb(111, 111, 219, 0.6);
-    padding: 10px;
+    padding: 1rem;
     line-height: 2.5;
 }
 
 .imagenes {
-    margin: 5%;
-    height: 90%;
-    width: 90%;
+    margin: 1rem;
+    height: auto;
+    width: 40vw;
 }
 
 .imagenParrafo {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 120%;
+    font-size: 1rem;
 }
 
 .imagen1 {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -354,7 +363,6 @@ button:hover {
 
 .imagen2 {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -363,7 +371,6 @@ button:hover {
 
 .imagen3 {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -372,7 +379,6 @@ button:hover {
 
 .imagen4 {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -381,7 +387,6 @@ button:hover {
 
 .imagen5 {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -390,20 +395,43 @@ button:hover {
 
 @media (min-width: 541px) and (max-width: 720px) {
 
-    .portada {
-        display: flex;
-        align-items: center;
-        flex-wrap: nowrap;
-        text-align: center;
-        margin: 1%;
+    .portada__barra {
+        font-size: 1.4rem;
     }
 
-    .portada__barra {
-        font-size: 110%;
+    .portada__logo {
+        height: 15vh; 
     }
 
     .titulo {
-        font-size: 210%;
+        font-size: 4rem;
+        padding: 8rem;
+    }
+
+    .subtitulo {
+        font-size: 1.8rem;   
+    }
+    
+    .parrafo {
+        font-size: 1.5rem;
+    }
+
+    .sobreNosotros__imagen {
+        height: 40vh;
+        width: 60vw;  
+    }
+
+    .proyecto {
+        padding: 1rem;
+        margin: 2rem;   
+    }
+    
+    .proyecto__titulo {
+        font-size: 1.5rem; 
+    }
+    
+    .proyecto__link {
+        font-size: 1.5rem;
     }
 
     .footer {
@@ -412,69 +440,118 @@ button:hover {
     }
 
     .footer__redes {
-        font-size: 110%;
+        font-size: 1rem;
     }
 
     .footer__ubicacion {
-        font-size: 100%;
+        font-size: 1rem;
+    }
+
+    .derechos {
+        font-size: 0.8rem;
     }
 
     .iframe {
-        height: 90px;
-        width: 150px;
+        height: 10vh;
+        width: 35vw;
     }
 
     .galeria {
         display: flex;
-        flex-wrap: wrap;  
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .imagenes {
+        margin: 1rem;
+        height: auto;
+        width: 45vw;
     }
     
     .pagina__titulo {
-        font-size: 180%;
         line-height: 1.9;
+        font-size: 1.8rem;
     }
     
     .pagina__subtitulo {
-        font-size: 130%;
         line-height: 1.9;
+        font-size: 1.2rem;
     }
     
     .pagina__texto {
-        font-size: 100%;
         line-height: 1.9;
+        font-size: 1.2rem;
     }
 
     .galeria__titulo {
-        font-size: 180%;
+        font-size: 1.8rem;
         line-height: 1.9;
     }
     
     .galeria__subtitulo {
-        font-size: 130%;
+        font-size: 1.2rem;
         line-height: 1.9;
     }
 
+    .pagina__formulario {
+        font-size: 1.2rem;
+    }
+
     .imput {
-        width: 80%;
+        font-size: 1.2rem;
+        width: 70vw;
     }
 }
 
 @media (min-width: 320px) and (max-width: 540px) {
   
     .portada {
-        display: flex;
-        align-items: center;
-        flex-wrap: nowrap;
-        text-align: center;
-        margin: 1%;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .portada__barra {
-        font-size: 90%;
+        font-size: 1.3rem;
     }
 
+    .portada__logo {
+        height: 13vh; 
+        width: 20vh;
+    }
+
+    ul {
+        flex-direction: column;
+    } 
+
     .titulo {
-        font-size: 150%;
+        font-size: 3rem;
+        padding: 5rem;
+    }
+    
+    .subtitulo {
+        font-size: 1.5rem;   
+    }
+    
+    .parrafo {
+        font-size: 1.4rem;
+    }
+
+    .sobreNosotros__imagen {
+        height: 30vh;
+        width: 60vw;  
+    }
+
+    .proyecto {
+        padding: 1rem;
+        margin: 2rem;   
+    }
+    
+    .proyecto__titulo {
+        font-size: 1.3rem; 
+    }
+    
+    .proyecto__link {
+        font-size: 1.3rem;
     }
 
     .footer {
@@ -483,54 +560,65 @@ button:hover {
     }
 
     .footer__redes {
-        font-size: 90%;
+        font-size: 1rem;
     }
 
     .footer__ubicacion {
-        font-size: 80%;
+        font-size: 1rem;
+    }
+
+    .derechos {
+        font-size: 0.8rem;
     }
 
     .iframe {
-        height: 80px;
-        width: 100px;
+        height: 10vh;
+        width: 35vw;
     }
 
     .galeria {
         display: flex;
-        flex-wrap: wrap;  
+        flex-wrap: wrap; 
+        flex-direction: column;
+    }
+
+    .imagenes {
+        margin: 1rem;
+        height: auto;
+        width: 45vw;
     }
 
     .pagina__titulo {
-        font-size: 160%;
+        font-size: 1.5rem;
         line-height: 1.9;
     }
     
     .pagina__subtitulo {
-        font-size: 120%;
+        font-size: 1.2rem;
         line-height: 1.9;
     }
     
     .pagina__texto {
-        font-size: 90%;
         line-height: 1.9;
+        font-size: 1.2rem;
     }
 
     .galeria__titulo {
-        font-size: 160%;
+        font-size: 1.5rem;
         line-height: 1.9;
     }
     
     .galeria__subtitulo {
-        font-size: 120%;
+        font-size: 1.2rem;
         line-height: 1.9;
-    }
-    
-    .imput {
-        width: 80%;
-        font-size: 80%;
     }
 
     .pagina__formulario {
-        font-size: 100%;
+        font-size: 1rem;
+    }
+    
+    .imput {
+        font-size: 1rem;
+        width: 60vw;
     }
 }
