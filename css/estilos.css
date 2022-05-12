@@ -31,7 +31,7 @@ body {
 }
 
 header {
-     background-color:rgb(13, 57, 99);
+    background-image: linear-gradient(to left,skyblue, teal, midnightblue);
 }
 
 .portada {
@@ -225,6 +225,33 @@ a i:hover {
     font-size: 2.5rem;
 }
 
+.animacion {
+    animation-duration: 3s;
+    animation-name: icono__animacion;
+    animation-iteration-count: infinite;
+}
+
+@keyframes icono__animacion {
+
+    0% {
+        font-size: 15px;
+        transform: rotate(120deg);
+        color:rgb(13, 57, 99)
+    }
+
+    50% {
+        font-size: 25px;
+        transform: rotate(240deg);
+        color:rgb(88, 124, 158)
+    }
+
+    100% {
+        font-size: 35px;
+        transform: rotate(360deg);
+        color:rgb(245, 248, 250)
+    }
+}
+
 .footer__ubicacion {
     grid-area: ubicacion;
     font-size: 1.3rem;
@@ -309,10 +336,8 @@ button {
 
 button:hover {
     background-color: rgb(52, 52, 252);
-    color: rgb(255, 255, 255);
-    border-radius: 30px;
-    font-size: 1.5rem;
-    margin: 0.8rem;
+    transform: scale(1.2);
+    transition: all 2s;
 }
 
 .galeria {

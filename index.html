@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="recursos/favicon-16x16.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/9d2f9a5db9.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Monster</title>
 </head>
@@ -42,7 +43,7 @@
                 <p class="parrafo">Somos una empresa familiar dedicada a las impresiones 3D en todos sus ámbitos. ¿Qué es la impresión 3D? Es un trabajo donde un objeto tridimensional diseñado en una computadora es creado físicamente mediante la superposición de capas sucesivas de material para obtener un objeto real y tangible como lo es una taza de café, un lapicero, partes de una maquina o hasta herramientas de trabajo. Cualquier cosa que se adapte a las necesidades del usuario. Nosotros hacemos el trabajo de diseñar un objeto que tengas en mente y quieras llevarlo a la realidad o si ya tenés tu diseño hecho nos lo envias y lo imprimimos para vos!
                 </p>
             </div>
-            <img class="sobreNosotros__imagen" src="recursos/familiaTrabajando.jpg" alt="Foto de la familia trabajando en la empresa">
+            <img class="sobreNosotros__imagen " data-aos="flip-left" src="recursos/familiaTrabajando.jpg" alt="Foto de la familia trabajando en la empresa">
         </section>
         <section class="proyecto">
             <h3 class="proyecto__titulo">¿Tenén una idea en mente y necesitás ayuda para crearla?</h3>
@@ -56,13 +57,13 @@
             <div class="footer__redes">
                 <p>Seguinos en redes sociales</p>
                 <a href="#">
-                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-facebook animacion"></i>
                 </a>
                 <a href="#">
-                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-instagram animacion"></i>
                 </a>
                 <a href="#">
-                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-twitter animacion"></i>
                 </a>
             </div>
             <div class="footer__ubicacion">
@@ -73,6 +74,10 @@
         <div class="derechos">
             <p>Todos los derechos reservados</p>
         </div>
-    </footer> 
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
