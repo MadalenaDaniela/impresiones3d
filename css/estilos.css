@@ -26,12 +26,13 @@ nav {
     background-image: linear-gradient(to left,skyblue, teal, midnightblue);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.5rem;
-    color:white;
 }
 
-nav a {
+.nav-item {
     text-decoration: none;
     color: white;
+    padding: 0.2rem;
+    margin: 0.2rem;
 }
 
 nav a:link {
@@ -41,14 +42,14 @@ nav a:link {
 
 nav a:visited {
     text-decoration: none;
-    color: white;
+    color: #CCD9FF;
 }
 
 nav a:hover {
     text-decoration: none;
     background-color: white;
     color: rgb(13, 57, 99);
-    border-radius: 0.3rem;
+    border-radius: 0.5rem;
 }
 
 nav a:active {
@@ -146,7 +147,7 @@ h4 a:hover {
     background-color: rgb(13, 57, 99);
     color: white;
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.3rem;
 }
 
 h4 a:active {
@@ -159,19 +160,31 @@ h4 a:active {
 
 .footer {
     display: grid;
-    grid-template-areas: "redes ubicacion";
+    grid-template-areas: "redes ubicacion"
+                         "reservados reservados";
     align-items: center;
     background-color: rgb(13, 57, 99);
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 1.5;
-    padding: 2rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
 }
 
 .footer__redes {
-    grid-area: redes;
-    font-size: 1.3rem;
-    text-align: center;
+    grid-area: redes;   
+}
+
+.footer__ubicacion {
+    grid-area: ubicacion;
+    
+}
+
+.derechos {
+    grid-area: reservados;
+    font-size: 1rem;
+    font-style: italic;
 }
 
 a {
@@ -181,7 +194,7 @@ a {
 a i {
     text-decoration: none;
     color: white;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 0.5rem;
 }
 
@@ -193,7 +206,7 @@ a i:hover {
 .animacion {
     animation-duration: 4s;
     animation-name: icono__animacion; 
-    animation-iteration-count: infinite; 
+    animation-iteration-count: initial; 
 }
 
 @keyframes icono__animacion {
@@ -217,25 +230,9 @@ a i:hover {
     }
 }
 
-.footer__ubicacion {
-    grid-area: ubicacion;
-    font-size: 1.3rem;
-    text-align: center;
-}
-
 .iframe {
     height: 10vh;
     width: 20vw;
-}
-
-.derechos {
-    grid-area: recervados;
-    background-color: rgb(13, 57, 99);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1rem;
-    font-style: italic;
-    color: white;
-    text-align: center;
 }
 
 .pagina {
@@ -279,7 +276,7 @@ a i:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.3rem;
     line-height: 1.9;
     background-image: url(../recursos/fondoContacto1.jpg);
@@ -287,6 +284,10 @@ a i:hover {
     border-radius: 1rem;
     width: 50vw;
     padding: 1rem;
+}
+
+label {
+    color: white;
 }
 
 .imput {
@@ -298,6 +299,7 @@ a i:hover {
     background-color: ghostwhite;
     border: 1px solid ghostwhite;
     border-radius: 0.5rem;
+    color: gray
 }
 
 .buttonEnviar {
