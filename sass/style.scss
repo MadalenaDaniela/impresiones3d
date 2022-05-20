@@ -1,0 +1,663 @@
+@import 'variables';
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(../recursos/fondo3.jpg);
+    background-size: cover;
+}
+
+.portada {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: nowrap;
+
+    &__logo {
+        width: 8vw;
+        height: 10vh; 
+    }
+}
+
+nav {
+    background-image: linear-gradient(to left,skyblue, teal, midnightblue);
+    font-family: $font-pricipal;
+    font-size: 1.5rem;
+
+    a {
+        &:link {
+            color: white;
+        }
+
+        &:visited {
+            color: #CCD9FF;
+        }
+
+        &:hover {
+            background-color: white;
+            color: $color-principal;
+            border-radius: 0.5rem;
+        }
+
+        &:active {
+            background-color: white;
+            color: $color-principal;
+            border-radius: 0.3rem;
+        }
+    }
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    padding: 0.2rem;
+    margin: 0.2rem;
+}
+
+.titulo {
+    font-family: $font-pricipal;
+    text-align: right;
+    justify-content: center;
+    font-size: 5rem;
+    color: white;
+    padding: 13rem;
+    background-image: url(../recursos/portada.jpeg);
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover; 
+}
+
+.sobreNosotros {
+    font-family: $font-pricipal;
+    line-height: 2;
+
+    &__subtituloParrafo {
+        text-align: center;
+        padding: 1.5rem;
+        color: rgb(2, 2, 26);
+
+        .subtitulo {
+            text-decoration: underline;
+            font-size: 1.7rem;  
+        }
+        
+        .parrafo {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__foto {
+        text-align: center;
+
+        .nosotrosImagen {
+            margin: 1rem;
+            border-radius: 2rem;
+            border: 3px solid rgb(233, 233, 236);
+            height: auto;
+            width: 30vw; 
+        }
+    }
+}
+
+.proyecto {
+    padding: 2rem;
+    margin: 3rem;
+    text-align: center; 
+    background-color: rgb(111, 111, 219);    
+
+    &__titulo {
+        font-family: $font-pricipal;
+        color: rgb(2, 2, 26);
+        font-size: 2rem; 
+    }
+
+    &__link {
+        font-family: $font-pricipal;
+        color: rgb(2, 2, 26);
+        font-size: 2rem;
+        line-height: 1.9;
+        margin: 0.5rem;
+    }
+}
+
+h4 {
+    a {
+        
+        &:link {
+            color: $color-principal;
+        }
+
+        &:visited {
+            color: $color-principal;
+        }
+
+        &:hover {
+            background-color: $color-principal;
+            color: white;
+            border-radius: 0.5rem;
+            padding: 0.3rem;    
+        }
+
+        &:active {
+            background-color: $color-principal;
+            color: white;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+        }
+    }
+}
+
+.footer {
+    display: grid;
+    grid-template-areas: "redes ubicacion"
+                         "reservados reservados";
+    align-items: center;
+    background-color: $color-principal;
+    color: white;
+    font-family: $font-pricipal;
+    line-height: 1.5;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+
+    &__redes {
+        grid-area: redes;
+    }
+
+    &__ubicacion {
+        grid-area: ubicacion;
+    }
+
+    &__derechos {
+        grid-area: reservados;
+        font-size: 1rem;
+        font-style: italic;
+    }
+}
+
+a {
+    text-decoration: none;
+
+    i {
+        text-decoration: none;
+        color: white;
+        font-size: 1.8rem;
+        margin: 0.5rem;
+
+        &:hover {
+            color: white;
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.animacion {
+    animation-duration: 4s;
+    animation-name: icono__animacion; 
+    animation-iteration-count: initial; 
+}
+
+@keyframes icono__animacion {
+
+    0% {
+        font-size: 16px;
+        transform: rotate(121deg);
+        color:$color-principal;
+    }
+
+    50% {
+        font-size: 26px;
+        transform: rotate(241deg);
+        color:rgb(88, 124, 158);
+    }
+
+    100% {
+        font-size: 36px;
+        transform: rotate(360deg);
+        color:rgb(245, 248, 250);
+    }
+}
+
+.iframe {
+    height: 10vh;
+    width: 20vw;
+}
+
+.pagina {
+    font-family: $font-pricipal;
+    margin: 2rem; 
+    
+    &__titulo {
+        text-align: center;
+        font-size: 1.8rem;
+        color: rgb(2, 2, 26);
+        line-height: 2.5; 
+    }
+
+    &__subtitulo {
+        font-size: 1.5rem;
+        background-color: rgb(111, 111, 219);
+        padding: 0.5rem;
+        line-height: 2.5;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__texto {
+        font-size: 1.5rem;
+        text-align: right;
+        margin: 0.5rem;
+        line-height: 2.5;
+        margin-bottom: 1.5rem;  
+    }
+
+    &__formulario {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: $font-pricipal;
+        font-size: 1.3rem;
+        line-height: 1.9;
+        background-image: url(../recursos/fondoContacto1.jpg);
+        background-size:  cover; 
+        border-radius: 1rem;
+        width: 50vw;
+        padding: 1rem;
+    }
+}
+
+.paginaTexto {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0.5rem;
+    line-height: 2.5;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    color: white;
+}
+
+.imput {
+    font-family: $font-pricipal;
+    font-size: 1.3rem;
+    width: 40vw;
+    padding: 0.4rem;
+    margin: 0.4rem;
+    background-color: ghostwhite;
+    border: 1px solid ghostwhite;
+    border-radius: 0.5rem;
+    color: gray
+}
+
+.buttonEnviar {
+    background-color: rgb(111, 111, 219);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(111, 111, 219);
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    margin: 0.8rem;
+
+    &:hover {
+        background-color: rgb(52, 52, 252);
+        transform: scale(1.3);
+        transition: all 3s;
+    }
+}
+
+.galeria {
+    display: grid;
+    margin: 1rem;
+    font-family: $font-pricipal;
+    grid-template-areas: "galeriaTitulo galeriaTitulo"
+                         "galeriaSubtitulo galeriaSubtitulo"
+                         "img1 img2"
+                         "img3 img4"
+                         "img5 img5";   
+
+        &__titulo {
+            grid-area: galeriaTitulo;
+            text-align: center;
+            font-size: 2rem;
+            color: rgb(2, 2, 26);
+            line-height: 2.5;
+        }
+
+        &__subtitulo {
+            grid-area: galeriaSubtitulo;
+            font-size: 1.5rem;
+            background-color: rgb(111, 111, 219);
+            padding: 1rem;
+            line-height: 2.5;   
+        }
+
+        .imagen1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            grid-area: img1;
+        }
+        .imagen2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            grid-area: img2;
+        }
+        .imagen3 {
+            display: flex;
+                flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            grid-area: img3;
+        }
+        .imagen4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            grid-area: img4;
+        }
+        .imagen5 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            grid-area: img5;
+            height: 100vh;
+            margin: 2rem;
+        }
+}
+
+
+.imagenes {
+    margin: 1rem;
+    height: auto;
+    width: 40vw;
+}
+
+.imagenParrafo {
+    font-family: $font-pricipal;
+    font-size: 1rem;
+}
+
+@media (min-width: 541px) and (max-width: 720px) {
+
+    .portada {
+        &__barra {
+            font-size: 1.4rem;  
+        }
+
+        &__logo {
+            width: 10vh;
+            height: 8vh;  
+        }
+    }
+
+    .titulo {
+        font-size: 4rem;
+        padding: 8rem;
+    }
+
+    .subtitulo {
+        font-size: 1.8rem;   
+    }
+    
+    .parrafo {
+        font-size: 1.5rem;
+    }
+
+    .nosotrosImagen {
+        height: 40vh;
+        width: 60vw;  
+    }
+
+    .proyecto {
+        padding: 1rem;
+        margin: 2rem;
+
+        &__titulo {
+            font-size: 1.5rem;
+        }
+
+        &__link {
+            font-size: 1.5rem;
+        }
+    }
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+
+            &__redes {
+                font-size: 1rem; 
+            }
+
+            &__ubicacion {
+                font-size: 1rem;
+
+                .iframe {
+                    height: 10vh;
+                    width: 35vw;
+                }
+            }
+
+            &__derechos {
+                font-size: 0.8rem; 
+            }
+    }
+
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+        .imagen5 {
+            height: 60vh;
+        
+            .paginaTexto {
+                line-height: 1.9;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .imagenes {
+        margin: 1rem;
+        height: auto;
+        width: 45vw;
+    }
+
+    .pagina {
+        &__titulo {
+            line-height: 1.9;
+            font-size: 1.8rem;
+        }
+
+        &__subtitulo {
+            line-height: 1.9;
+            font-size: 1.2rem;
+        }
+
+        &__texto {
+            line-height: 1.9;
+            font-size: 1.2rem;
+        }
+    }
+
+    .card {
+        margin: 1rem;
+        height: auto;
+        width: 50vw;
+    }
+
+    .galeria {
+        &__titulo {
+            font-size: 1.8rem;
+            line-height: 1.9;   
+        }
+
+        &__subtitulo {
+            font-size: 1.2rem;
+            line-height: 1.9;
+        }
+    }
+
+    .pagina__formulario {
+        font-size: 1.2rem;
+        width: 80vw;
+    }
+
+    .imput {
+        font-size: 1.2rem;
+        width: 70vw;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+  
+    .portada {
+        flex-direction: column;
+        justify-content: center;
+
+        &__barra {
+            font-size: 1.3rem; 
+        }
+
+        &__logo {
+            height: 7vh; 
+            width: 9vh; 
+        }
+    }
+
+    ul {
+        flex-direction: column;
+    } 
+
+    .titulo {
+        font-size: 3rem;
+        padding: 7rem;
+    }
+    
+    .subtitulo {
+        font-size: 1.5rem;   
+    }
+    
+    .parrafo {
+        font-size: 1.4rem;
+    }
+
+    .nosotrosImagen {
+        height: 30vh;
+        width: 60vw;  
+    }
+
+    .proyecto {
+        padding: 1rem;
+        margin: 2rem;
+        
+            &__titulo {
+            font-size: 1.3rem;
+        }
+
+            &__link{
+            font-size: 1.3rem; 
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+
+            &__redes {
+            font-size: 1rem;
+            }
+
+            &__ubicacion {
+                font-size: 1rem;
+            
+                    .iframe {
+                        height: 10vh;
+                        width: 35vw;
+                    }
+            }
+
+            &__derechos {
+                font-size: 0.8rem;
+            }
+    }
+
+    .galeria {
+        display: flex;
+        flex-wrap: wrap; 
+        flex-direction: column;
+    }
+
+    .imagenes {
+        margin: 1rem;
+        height: auto;
+        width: 45vw;
+    }
+
+    .imagen5 {
+        height: 50vh;
+            
+            .paginaTexto {
+                line-height: 1.9;
+                font-size: 1.2rem;
+            }
+    }
+    
+    .pagina {
+
+        &__titulo {
+            font-size: 1.5rem;
+            line-height: 1.9;
+        }
+        
+        &__subtitulo {
+            font-size: 1.2rem;
+            line-height: 1.9;
+        }
+
+        &__texto {
+            line-height: 1.9;
+            font-size: 1.2rem; 
+        }
+    }
+
+    .card {
+        margin: 1rem;
+        height: auto;
+        width: 45vw;
+    }
+
+    .galeria {
+        &__titulo {
+            font-size: 1.5rem;
+            line-height: 1.9;
+        }
+
+        &__subtitulo {
+            font-size: 1.2rem;
+            line-height: 1.9;
+        }
+    }
+
+    .pagina__formulario {
+        font-size: 1rem;
+        width: 70vw;
+    }
+    
+    .imput {
+        font-size: 1rem;
+        width: 60vw;
+    }
+}
