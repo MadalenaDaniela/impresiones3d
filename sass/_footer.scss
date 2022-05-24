@@ -1,0 +1,76 @@
+
+.footer {
+    display: grid;
+    grid-template-areas: "redes ubicacion"
+                         "reservados reservados";
+    align-items: center;
+    background-color: $color-principal;
+    color: $color-letra-secundario;
+    font-family: $font-pricipal;
+    line-height: 1.5;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+
+    &__redes {
+        grid-area: redes;
+    }
+
+    &__ubicacion {
+        grid-area: ubicacion;
+    }
+
+    &__derechos {
+        grid-area: reservados;
+        font-size: 1rem;
+        font-style: italic;
+    }
+}
+
+a {
+    text-decoration: none;
+
+    i {
+        text-decoration: none;
+        color: $color-letra-secundario;
+        font-size: 1.8rem;
+        margin: 0.5rem;
+
+        &:hover {
+            color: $color-link-active;
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.animacion {
+    animation-duration: 4s;
+    animation-name: icono__animacion; 
+    animation-iteration-count: initial; 
+}
+
+@keyframes icono__animacion {
+
+    0% {
+        font-size: 16px;
+        transform: rotate(121deg);
+        color:$color-principal;
+    }
+
+    50% {
+        font-size: 26px;
+        transform: rotate(241deg);
+        color:rgb(88, 124, 158);
+    }
+
+    100% {
+        font-size: 36px;
+        transform: rotate(360deg);
+        color: $color-letra-secundario;
+    }
+}
+
+.iframe {
+    height: 10vh;
+    width: 20vw;
+}

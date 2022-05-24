@@ -1,11 +1,3 @@
-* {
-  margin: 0px;
-  padding: 0px; }
-
-body {
-  background-image: url(../recursos/fondo3.jpg);
-  background-size: cover; }
-
 .portada {
   display: flex;
   justify-content: space-around;
@@ -51,61 +43,6 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-
-.sobreNosotros {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  line-height: 2; }
-  .sobreNosotros__subtituloParrafo {
-    text-align: center;
-    padding: 1.5rem;
-    color: #02021a; }
-    .sobreNosotros__subtituloParrafo .subtitulo {
-      text-decoration: underline;
-      font-size: 1.7rem; }
-    .sobreNosotros__subtituloParrafo .parrafo {
-      font-size: 1.4rem; }
-  .sobreNosotros__foto {
-    text-align: center; }
-    .sobreNosotros__foto .nosotrosImagen {
-      margin: 1rem;
-      border-radius: 2rem;
-      border: 3px solid #e9e9ec;
-      height: auto;
-      width: 30vw; }
-
-.proyecto {
-  padding: 2rem;
-  margin: 3rem;
-  text-align: center;
-  background-color: #6f6fdb; }
-  .proyecto__titulo {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    color: #02021a;
-    font-size: 2rem; }
-  .proyecto__link {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    color: #02021a;
-    font-size: 2rem;
-    line-height: 1.9;
-    margin: 0.5rem; }
-
-h4 a:link {
-  color: #0d3963; }
-
-h4 a:visited {
-  color: #0d3963; }
-
-h4 a:hover {
-  background-color: #0d3963;
-  color: white;
-  border-radius: 0.5rem;
-  padding: 0.3rem; }
-
-h4 a:active {
-  background-color: #0d3963;
-  color: white;
-  border-radius: 0.5rem;
-  padding: 0.5rem; }
 
 .footer {
   display: grid;
@@ -155,11 +92,74 @@ a {
   100% {
     font-size: 36px;
     transform: rotate(360deg);
-    color: #f5f8fa; } }
+    color: white; } }
 
 .iframe {
   height: 10vh;
   width: 20vw; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  background-image: url(../recursos/fondo3.jpg);
+  background-size: cover; }
+
+.sobreNosotros {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 2; }
+  .sobreNosotros__subtituloParrafo {
+    text-align: center;
+    padding: 1.5rem;
+    color: #02021a; }
+    .sobreNosotros__subtituloParrafo .subtitulo {
+      text-decoration: underline;
+      font-size: 1.7rem; }
+    .sobreNosotros__subtituloParrafo .parrafo {
+      font-size: 1.4rem; }
+  .sobreNosotros__foto {
+    text-align: center; }
+    .sobreNosotros__foto .nosotrosImagen {
+      margin: 1rem;
+      border-radius: 2rem;
+      border: 3px solid white;
+      height: auto;
+      width: 30vw; }
+
+.proyecto {
+  padding: 2rem;
+  margin: 3rem;
+  text-align: center;
+  background-color: #6f6fdb; }
+  .proyecto__titulo {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #02021a;
+    font-size: 2rem; }
+  .proyecto__link {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #02021a;
+    font-size: 2rem;
+    line-height: 1.9;
+    margin: 0.5rem; }
+
+h4 a:link {
+  color: #0d3963; }
+
+h4 a:visited {
+  color: #0d3963; }
+
+h4 a:hover {
+  background-color: #0d3963;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.3rem; }
+
+h4 a:active {
+  background-color: #0d3963;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem; }
 
 .pagina {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -214,7 +214,7 @@ label {
   background-color: ghostwhite;
   border: 1px solid ghostwhite;
   border-radius: 0.5rem;
-  color: gray; }
+  color: grey; }
 
 .buttonEnviar {
   background-color: #6f6fdb;
@@ -225,8 +225,9 @@ label {
   padding: 0.8rem;
   margin: 0.8rem; }
   .buttonEnviar:hover {
-    background-color: #3434fc;
-    transform: scale(1.3);
+    background-color: #0d3963;
+    border: 1px solid #0d3963;
+    transform: scale(1.1);
     transition: all 3s; }
 
 .galeria {
@@ -277,7 +278,7 @@ label {
     justify-content: center;
     grid-area: img5;
     height: 100vh;
-    margin: 2rem; }
+    margin: 1rem; }
 
 .imagenes {
   margin: 1rem;
@@ -286,7 +287,7 @@ label {
 
 .imagenParrafo {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 1rem; }
+  font-size: 1.2rem; }
 
 @media (min-width: 541px) and (max-width: 720px) {
   .portada__barra {
@@ -297,9 +298,9 @@ label {
   .titulo {
     font-size: 4rem;
     padding: 8rem; }
-  .subtitulo {
+  .sobreNosotros__subtituloParrafo .subtitulo {
     font-size: 1.8rem; }
-  .parrafo {
+  .sobreNosotros__subtituloParrafo .parrafo {
     font-size: 1.5rem; }
   .nosotrosImagen {
     height: 40vh;
@@ -323,15 +324,6 @@ label {
         width: 35vw; }
     .footer__derechos {
       font-size: 0.8rem; }
-  .galeria {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; }
-    .galeria .imagen5 {
-      height: 60vh; }
-      .galeria .imagen5 .paginaTexto {
-        line-height: 1.9;
-        font-size: 1.2rem; }
   .imagenes {
     margin: 1rem;
     height: auto;
@@ -345,22 +337,31 @@ label {
   .pagina__texto {
     line-height: 1.9;
     font-size: 1.2rem; }
-  .card {
-    margin: 1rem;
-    height: auto;
-    width: 50vw; }
-  .galeria__titulo {
-    font-size: 1.8rem;
-    line-height: 1.9; }
-  .galeria__subtitulo {
-    font-size: 1.2rem;
-    line-height: 1.9; }
   .pagina__formulario {
     font-size: 1.2rem;
     width: 80vw; }
-  .imput {
-    font-size: 1.2rem;
-    width: 70vw; } }
+    .pagina__formulario .imput {
+      font-size: 1.2rem;
+      width: 70vw; }
+  .pagina .card {
+    margin: 1rem;
+    height: auto;
+    width: 50vw; }
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; }
+    .galeria__titulo {
+      font-size: 1.8rem;
+      line-height: 1.9; }
+    .galeria__subtitulo {
+      font-size: 1.2rem;
+      line-height: 1.9; }
+    .galeria .imagen5 {
+      height: 60vh; }
+      .galeria .imagen5 .paginaTexto {
+        line-height: 1.9;
+        font-size: 1.2rem; } }
 
 @media (min-width: 320px) and (max-width: 540px) {
   .portada {
@@ -371,14 +372,12 @@ label {
     .portada__logo {
       height: 7vh;
       width: 9vh; }
-  ul {
-    flex-direction: column; }
   .titulo {
     font-size: 3rem;
     padding: 7rem; }
-  .subtitulo {
+  .sobreNosotros__subtituloParrafo .subtitulo {
     font-size: 1.5rem; }
-  .parrafo {
+  .sobreNosotros__subtituloParrafo .parrafo {
     font-size: 1.4rem; }
   .nosotrosImagen {
     height: 30vh;
@@ -406,15 +405,21 @@ label {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column; }
+    .galeria__titulo {
+      font-size: 1.5rem;
+      line-height: 1.9; }
+    .galeria__subtitulo {
+      font-size: 1.2rem;
+      line-height: 1.9; }
+    .galeria .imagen5 {
+      height: 50vh; }
+      .galeria .imagen5 .paginaTexto {
+        line-height: 1.9;
+        font-size: 1.2rem; }
   .imagenes {
     margin: 1rem;
     height: auto;
     width: 45vw; }
-  .imagen5 {
-    height: 50vh; }
-    .imagen5 .paginaTexto {
-      line-height: 1.9;
-      font-size: 1.2rem; }
   .pagina__titulo {
     font-size: 1.5rem;
     line-height: 1.9; }
@@ -424,19 +429,13 @@ label {
   .pagina__texto {
     line-height: 1.9;
     font-size: 1.2rem; }
-  .card {
-    margin: 1rem;
-    height: auto;
-    width: 45vw; }
-  .galeria__titulo {
-    font-size: 1.5rem;
-    line-height: 1.9; }
-  .galeria__subtitulo {
-    font-size: 1.2rem;
-    line-height: 1.9; }
   .pagina__formulario {
     font-size: 1rem;
-    width: 70vw; }
-  .imput {
-    font-size: 1rem;
-    width: 60vw; } }
+    width: 80vw; }
+    .pagina__formulario .imput {
+      font-size: 1rem;
+      width: 60vw; }
+  .pagina .card {
+    margin: 1rem;
+    height: auto;
+    width: 45vw; } }

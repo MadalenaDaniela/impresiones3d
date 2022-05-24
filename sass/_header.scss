@@ -1,0 +1,62 @@
+
+.portada {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: nowrap;
+
+    &__logo {
+        width: 8vw;
+        height: 10vh; 
+    }
+}
+
+nav {
+    background-image: $color-nav;
+    font-family: $font-pricipal;
+    font-size: 1.5rem;
+
+    a {
+        &:link {
+            color: $color-link-active;
+        }
+
+        &:visited {
+            color: $color-link-visited;
+        }
+
+        &:hover {
+            background-color: $color-link-active;
+            color: $color-principal;
+            border-radius: 0.5rem;
+        }
+
+        &:active {
+            background-color: $color-link-active;
+            color: $color-principal;
+            border-radius: 0.3rem;
+        }
+    }
+}
+
+.nav-item {
+    text-decoration: none;
+    color: $color-link-active;
+    padding: 0.2rem;
+    margin: 0.2rem;
+}
+
+.titulo {
+    font-family: $font-pricipal;
+    text-align: right;
+    justify-content: center;
+    font-size: 5rem;
+    color: $color-letra-secundario;
+    padding: 13rem;
+    background-image: url(../recursos/portada.jpeg);
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover; 
+}

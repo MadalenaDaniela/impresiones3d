@@ -1,4 +1,6 @@
 @import 'variables';
+@import 'header';
+@import 'footer';
 
 * {
     margin: 0px;
@@ -10,68 +12,6 @@ body {
     background-size: cover;
 }
 
-.portada {
-    display: flex; 
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    flex-wrap: nowrap;
-
-    &__logo {
-        width: 8vw;
-        height: 10vh; 
-    }
-}
-
-nav {
-    background-image: linear-gradient(to left,skyblue, teal, midnightblue);
-    font-family: $font-pricipal;
-    font-size: 1.5rem;
-
-    a {
-        &:link {
-            color: white;
-        }
-
-        &:visited {
-            color: #CCD9FF;
-        }
-
-        &:hover {
-            background-color: white;
-            color: $color-principal;
-            border-radius: 0.5rem;
-        }
-
-        &:active {
-            background-color: white;
-            color: $color-principal;
-            border-radius: 0.3rem;
-        }
-    }
-}
-
-.nav-item {
-    text-decoration: none;
-    color: white;
-    padding: 0.2rem;
-    margin: 0.2rem;
-}
-
-.titulo {
-    font-family: $font-pricipal;
-    text-align: right;
-    justify-content: center;
-    font-size: 5rem;
-    color: white;
-    padding: 13rem;
-    background-image: url(../recursos/portada.jpeg);
-    background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size:  cover; 
-}
-
 .sobreNosotros {
     font-family: $font-pricipal;
     line-height: 2;
@@ -79,7 +19,7 @@ nav {
     &__subtituloParrafo {
         text-align: center;
         padding: 1.5rem;
-        color: rgb(2, 2, 26);
+        color: $color-letra-primario;
 
         .subtitulo {
             text-decoration: underline;
@@ -97,7 +37,7 @@ nav {
         .nosotrosImagen {
             margin: 1rem;
             border-radius: 2rem;
-            border: 3px solid rgb(233, 233, 236);
+            border: 3px solid $borde-foto;
             height: auto;
             width: 30vw; 
         }
@@ -108,17 +48,17 @@ nav {
     padding: 2rem;
     margin: 3rem;
     text-align: center; 
-    background-color: rgb(111, 111, 219);    
+    background-color: $color-secundario;    
 
     &__titulo {
         font-family: $font-pricipal;
-        color: rgb(2, 2, 26);
+        color: $color-letra-primario;
         font-size: 2rem; 
     }
 
     &__link {
         font-family: $font-pricipal;
-        color: rgb(2, 2, 26);
+        color: $color-letra-primario;
         font-size: 2rem;
         line-height: 1.9;
         margin: 0.5rem;
@@ -138,94 +78,18 @@ h4 {
 
         &:hover {
             background-color: $color-principal;
-            color: white;
+            color: $color-link-active;
             border-radius: 0.5rem;
             padding: 0.3rem;    
         }
 
         &:active {
             background-color: $color-principal;
-            color: white;
+            color: $color-link-active;
             border-radius: 0.5rem;
             padding: 0.5rem;
         }
     }
-}
-
-.footer {
-    display: grid;
-    grid-template-areas: "redes ubicacion"
-                         "reservados reservados";
-    align-items: center;
-    background-color: $color-principal;
-    color: white;
-    font-family: $font-pricipal;
-    line-height: 1.5;
-    padding: 1rem;
-    text-align: center;
-    font-size: 1.3rem;
-
-    &__redes {
-        grid-area: redes;
-    }
-
-    &__ubicacion {
-        grid-area: ubicacion;
-    }
-
-    &__derechos {
-        grid-area: reservados;
-        font-size: 1rem;
-        font-style: italic;
-    }
-}
-
-a {
-    text-decoration: none;
-
-    i {
-        text-decoration: none;
-        color: white;
-        font-size: 1.8rem;
-        margin: 0.5rem;
-
-        &:hover {
-            color: white;
-            font-size: 2.5rem;
-        }
-    }
-}
-
-.animacion {
-    animation-duration: 4s;
-    animation-name: icono__animacion; 
-    animation-iteration-count: initial; 
-}
-
-@keyframes icono__animacion {
-
-    0% {
-        font-size: 16px;
-        transform: rotate(121deg);
-        color:$color-principal;
-    }
-
-    50% {
-        font-size: 26px;
-        transform: rotate(241deg);
-        color:rgb(88, 124, 158);
-    }
-
-    100% {
-        font-size: 36px;
-        transform: rotate(360deg);
-        color:rgb(245, 248, 250);
-    }
-}
-
-.iframe {
-    height: 10vh;
-    width: 20vw;
 }
 
 .pagina {
@@ -235,13 +99,13 @@ a {
     &__titulo {
         text-align: center;
         font-size: 1.8rem;
-        color: rgb(2, 2, 26);
+        color: $color-letra-primario;
         line-height: 2.5; 
     }
 
     &__subtitulo {
         font-size: 1.5rem;
-        background-color: rgb(111, 111, 219);
+        background-color: $color-secundario;
         padding: 0.5rem;
         line-height: 2.5;
         margin-top: 1.5rem;
@@ -280,7 +144,7 @@ a {
 }
 
 label {
-    color: white;
+    color: $color-letra-secundario;
 }
 
 .imput {
@@ -289,24 +153,25 @@ label {
     width: 40vw;
     padding: 0.4rem;
     margin: 0.4rem;
-    background-color: ghostwhite;
-    border: 1px solid ghostwhite;
+    background-color: $imput-background;
+    border: 1px solid $imput-background;
     border-radius: 0.5rem;
-    color: gray
+    color: $imput-letra;
 }
 
 .buttonEnviar {
-    background-color: rgb(111, 111, 219);
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(111, 111, 219);
+    background-color: $color-secundario;
+    color: $color-letra-secundario;
+    border: 1px solid $color-secundario;
     border-radius: 2rem;
     font-size: 1.5rem;
     padding: 0.8rem;
     margin: 0.8rem;
 
     &:hover {
-        background-color: rgb(52, 52, 252);
-        transform: scale(1.3);
+        background-color: $color-principal;
+        border: 1px solid $color-principal;
+        transform: scale(1.1);
         transition: all 3s;
     }
 }
@@ -325,14 +190,14 @@ label {
             grid-area: galeriaTitulo;
             text-align: center;
             font-size: 2rem;
-            color: rgb(2, 2, 26);
+            color: $color-letra-primario;
             line-height: 2.5;
         }
 
         &__subtitulo {
             grid-area: galeriaSubtitulo;
             font-size: 1.5rem;
-            background-color: rgb(111, 111, 219);
+            background-color: $color-secundario;
             padding: 1rem;
             line-height: 2.5;   
         }
@@ -353,7 +218,7 @@ label {
         }
         .imagen3 {
             display: flex;
-                flex-direction: column;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             grid-area: img3;
@@ -372,10 +237,9 @@ label {
             justify-content: center;
             grid-area: img5;
             height: 100vh;
-            margin: 2rem;
+            margin: 1rem;
         }
 }
-
 
 .imagenes {
     margin: 1rem;
@@ -385,7 +249,7 @@ label {
 
 .imagenParrafo {
     font-family: $font-pricipal;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 @media (min-width: 541px) and (max-width: 720px) {
@@ -406,12 +270,15 @@ label {
         padding: 8rem;
     }
 
-    .subtitulo {
-        font-size: 1.8rem;   
-    }
+    .sobreNosotros__subtituloParrafo {
+        
+        .subtitulo {
+            font-size: 1.8rem;   
+        }
     
-    .parrafo {
-        font-size: 1.5rem;
+        .parrafo {
+            font-size: 1.5rem;
+        }
     }
 
     .nosotrosImagen {
@@ -454,21 +321,6 @@ label {
             }
     }
 
-    .galeria {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        
-        .imagen5 {
-            height: 60vh;
-        
-            .paginaTexto {
-                line-height: 1.9;
-                font-size: 1.2rem;
-            }
-        }
-    }
-
     .imagenes {
         margin: 1rem;
         height: auto;
@@ -490,15 +342,30 @@ label {
             line-height: 1.9;
             font-size: 1.2rem;
         }
-    }
 
-    .card {
-        margin: 1rem;
-        height: auto;
-        width: 50vw;
+        &__formulario {
+            font-size: 1.2rem;
+            width: 80vw;
+
+            .imput {
+                font-size: 1.2rem;
+                width: 70vw;
+            }
+        }
+
+        .card {
+            margin: 1rem;
+            height: auto;
+            width: 50vw;
+        }
     }
 
     .galeria {
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
         &__titulo {
             font-size: 1.8rem;
             line-height: 1.9;   
@@ -507,17 +374,17 @@ label {
         &__subtitulo {
             font-size: 1.2rem;
             line-height: 1.9;
+        } 
+        
+        .imagen5 {
+            
+            height: 60vh;
+        
+            .paginaTexto {
+                line-height: 1.9;
+                font-size: 1.2rem;
+            }
         }
-    }
-
-    .pagina__formulario {
-        font-size: 1.2rem;
-        width: 80vw;
-    }
-
-    .imput {
-        font-size: 1.2rem;
-        width: 70vw;
     }
 }
 
@@ -537,21 +404,20 @@ label {
         }
     }
 
-    ul {
-        flex-direction: column;
-    } 
-
     .titulo {
         font-size: 3rem;
         padding: 7rem;
     }
-    
-    .subtitulo {
-        font-size: 1.5rem;   
-    }
-    
-    .parrafo {
-        font-size: 1.4rem;
+
+    .sobreNosotros__subtituloParrafo {
+        
+        .subtitulo {
+            font-size: 1.5rem;   
+        }
+        
+        .parrafo {
+            font-size: 1.4rem;
+        }
     }
 
     .nosotrosImagen {
@@ -560,6 +426,7 @@ label {
     }
 
     .proyecto {
+
         padding: 1rem;
         margin: 2rem;
         
@@ -573,6 +440,7 @@ label {
     }
 
     .footer {
+
         display: flex;
         flex-direction: column;
 
@@ -595,26 +463,39 @@ label {
     }
 
     .galeria {
+
         display: flex;
         flex-wrap: wrap; 
         flex-direction: column;
-    }
 
-    .imagenes {
-        margin: 1rem;
-        height: auto;
-        width: 45vw;
-    }
+        &__titulo {
+            font-size: 1.5rem;
+            line-height: 1.9;
+        }
 
-    .imagen5 {
-        height: 50vh;
+        &__subtitulo {
+            font-size: 1.2rem;
+            line-height: 1.9;
+        }
+        
+        .imagen5 {
+
+            height: 50vh;
             
             .paginaTexto {
                 line-height: 1.9;
                 font-size: 1.2rem;
             }
+        }
     }
-    
+
+    .imagenes {
+
+        margin: 1rem;
+        height: auto;
+        width: 45vw;
+    }
+
     .pagina {
 
         &__titulo {
@@ -631,33 +512,22 @@ label {
             line-height: 1.9;
             font-size: 1.2rem; 
         }
-    }
 
-    .card {
-        margin: 1rem;
-        height: auto;
-        width: 45vw;
-    }
+        &__formulario {
+            font-size: 1rem;
+            width: 80vw;
 
-    .galeria {
-        &__titulo {
-            font-size: 1.5rem;
-            line-height: 1.9;
+            .imput {
+                font-size: 1rem;
+                width: 60vw;
+            }
         }
 
-        &__subtitulo {
-            font-size: 1.2rem;
-            line-height: 1.9;
-        }
-    }
+        .card {
 
-    .pagina__formulario {
-        font-size: 1rem;
-        width: 70vw;
-    }
-    
-    .imput {
-        font-size: 1rem;
-        width: 60vw;
+            margin: 1rem;
+            height: auto;
+            width: 45vw;
+        }
     }
 }
