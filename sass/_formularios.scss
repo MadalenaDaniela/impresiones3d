@@ -1,0 +1,47 @@
+
+.formularios {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: $font-pricipal;
+    font-size: 1.3rem;
+    line-height: 1.9;
+    background-image: url(../recursos/fondoContacto1.jpg);
+    background-size:  cover; 
+    border-radius: 1rem;
+    width: 50vw;
+    padding: 1rem;
+}
+
+label {
+    color: $color-letra-secundario;
+}
+
+.imput {
+    font-family: $font-pricipal;
+    font-size: 1.3rem;
+    width: 40vw;
+    padding: 0.4rem;
+    margin: 0.4rem;
+    background-color: $imput-background;
+    border: 1px solid $imput-background;
+    border-radius: 0.5rem;
+    color: $imput-letra;
+}
+
+.buttonEnviar {
+    background-color: $color-secundario;
+    color: $color-letra-secundario;
+    border: 1px solid $color-secundario;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    margin: 0.8rem;
+
+    &:hover {
+        background-color: $color-principal;
+        border: 1px solid $color-principal;
+        transform: scale(1.1);
+        transition: all 3s;
+    }
+}

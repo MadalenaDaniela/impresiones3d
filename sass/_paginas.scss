@@ -1,0 +1,17 @@
+
+.pagina {
+    font-family: $font-pricipal;
+    margin: 2rem; 
+    
+    &__titulo {
+        @include paginasEstilos (1.8rem, none, center, none);
+    }
+
+    &__subtitulo {
+        @include paginasEstilos (1.5rem, 0.5rem, left, $color-secundario);
+    }
+
+    &__texto {
+        @include paginasEstilos (1.5rem, none, right, none);
+    }
+}

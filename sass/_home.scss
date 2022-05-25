@@ -1,0 +1,32 @@
+
+.sobreNosotros {
+    font-family: $font-pricipal;
+    line-height: 2;
+
+    &__subtituloParrafo {
+        text-align: center;
+        padding: 1.5rem;
+        color: $color-letra-primario;
+
+        .subtitulo {
+            text-decoration: underline;
+            font-size: 1.7rem;  
+        }
+        
+        .parrafo {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__foto {
+        text-align: center;
+
+        .nosotrosImagen {
+            margin: 1rem;
+            border-radius: 2rem;
+            border: 3px solid $borde-foto;
+            height: auto;
+            width: 30vw; 
+        }
+    }
+}

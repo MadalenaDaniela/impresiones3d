@@ -1,0 +1,48 @@
+
+.proyecto {
+    padding: 2rem;
+    margin: 3rem;
+    text-align: center; 
+    background-color: $color-secundario;    
+
+    &__titulo {
+        font-family: $font-pricipal;
+        color: $color-letra-primario;
+        font-size: 2rem; 
+    }
+
+    &__link {
+        font-family: $font-pricipal;
+        color: $color-letra-primario;
+        font-size: 2rem;
+        line-height: 1.9;
+        margin: 0.5rem;
+    }
+}
+
+h4 {
+    a {
+        
+        &:link {
+            color: $color-principal;
+        }
+
+        &:visited {
+            color: $color-principal;
+        }
+
+        &:hover {
+            background-color: $color-principal;
+            color: $color-link-active;
+            border-radius: 0.5rem;
+            padding: 0.3rem;    
+        }
+
+        &:active {
+            background-color: $color-principal;
+            color: $color-link-active;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+        }
+    }
+}

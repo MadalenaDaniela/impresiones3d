@@ -1,0 +1,56 @@
+
+.galeria {
+    display: grid;
+    margin: 1rem;
+    font-family: $font-pricipal;
+    grid-template-areas: "galeriaTitulo galeriaTitulo"
+                         "galeriaSubtitulo galeriaSubtitulo"
+                         "img1 img2"
+                         "img3 img4"
+                         "img5 img5";   
+
+        &__titulo {
+            @include galeriaEstilos (galeriaTitulo, 2rem, none, center, none);
+        }
+
+        &__subtitulo {
+            @include galeriaEstilos (galeriaSubtitulo, 1.5rem, $color-secundario, none, 1rem);   
+        }
+
+        .imagen1 {
+            @include galeriaFotos (img1);
+        }
+        .imagen2 {
+            @include galeriaFotos (img2);
+        }
+        .imagen3 {
+            @include galeriaFotos (img3);
+        }
+        .imagen4 {
+            @include galeriaFotos (img4);
+        }
+        .imagen5 {
+            @include galeriaFotos (img5);
+            height: 100vh;
+            margin: 1rem;
+        }
+}
+
+.imagenes {
+    margin: 1rem;
+    height: auto;
+    width: 40vw;
+}
+
+.imagenParrafo {
+    font-family: $font-pricipal;
+    font-size: 1.2rem;
+}
+
+.galeriaTexto {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0.5rem;
+    line-height: 2.5;
+    margin-bottom: 1.5rem;
+}
