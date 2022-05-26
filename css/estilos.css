@@ -151,6 +151,12 @@ a {
     grid-area: img5;
     height: 100vh;
     margin: 1rem; }
+    .galeria .imagen5 .galeriaTexto {
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 0.5rem;
+      line-height: 2.5;
+      margin-bottom: 1.5rem; }
 
 .imagenes {
   margin: 1rem;
@@ -160,13 +166,6 @@ a {
 .imagenParrafo {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 1.2rem; }
-
-.galeriaTexto {
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 0.5rem;
-  line-height: 2.5;
-  margin-bottom: 1.5rem; }
 
 .proyecto {
   padding: 2rem;
