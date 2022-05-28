@@ -2,8 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  text-align: center;
-  flex-wrap: nowrap; }
+  text-align: center; }
   .portada__logo {
     width: 8vw;
     height: 10vh; }
@@ -240,7 +239,8 @@ h4 a:active {
   background-size: cover;
   border-radius: 1rem;
   width: 50vw;
-  padding: 1rem; }
+  padding: 1rem;
+  margin-top: 2rem; }
 
 label {
   color: white; }
@@ -269,6 +269,10 @@ label {
     border: 1px solid #0d3963;
     transform: scale(1.1);
     transition: all 3s; }
+
+body {
+  background-image: url(../recursos/fondo3.jpg);
+  background-size: cover; }
 
 .sobreNosotros {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -345,6 +349,10 @@ label {
     .pagina .formularios .imput {
       font-size: 1.2rem;
       width: 70vw; }
+    .pagina .formularios .buttonEnviar {
+      font-size: 1.2rem;
+      padding: 0.6rem;
+      margin: 0.6rem; }
   .pagina .card {
     margin: 1rem;
     height: auto;
@@ -437,6 +445,10 @@ label {
     .pagina .formularios .imput {
       font-size: 1rem;
       width: 60vw; }
+    .pagina .formularios .buttonEnviar {
+      font-size: 1rem;
+      padding: 0.5rem;
+      margin: 0.5rem; }
   .pagina .card {
     margin: 1rem;
     height: auto;
@@ -445,7 +457,3 @@ label {
 * {
   margin: 0px;
   padding: 0px; }
-
-body {
-  background-image: url(../recursos/fondo3.jpg);
-  background-size: cover; }
