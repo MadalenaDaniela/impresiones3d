@@ -26,3 +26,13 @@
     line-height: 2.5;
     padding: $padding;   
 }
+
+@mixin buttonEstilo ($background) {
+    background-color: $background;
+    color: $color-letra-secundario;
+    border: 1px solid $color-secundario;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    margin: 0.8rem;
+}

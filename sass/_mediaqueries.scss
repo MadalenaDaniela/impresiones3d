@@ -139,6 +139,16 @@
             }
         }
     }
+
+    .errorTitulo {
+        font-size: 2.5rem;
+        padding: 4rem; 
+    }
+
+    .imgError {
+        height: auto;
+        width: 80vw; 
+    }
 }
 
 @media (min-width: 320px) and (max-width: 540px) {
@@ -288,5 +298,15 @@
             height: auto;
             width: 45vw;
         }
+    }
+
+    .errorTitulo {
+        font-size: 2.5rem;
+        padding: 3rem; 
+    }
+
+    .imgError {
+        height: auto;
+        width: 80vw; 
     }
 }
