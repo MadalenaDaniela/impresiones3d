@@ -1,5 +1,5 @@
 
-@mixin galeriaFotos ($grid) {
+@mixin galeria__fotos ($grid) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,7 +7,7 @@
     grid-area: $grid;
 }
 
-@mixin paginasEstilos ($size, $padding, $aligne, $background) {
+@mixin paginas__estilos ($size, $padding, $aligne, $background) {
     font-size: $size;
     padding: $padding;
     text-align: $aligne;
@@ -17,7 +17,7 @@
     color: $color-letra-primario;    
 }
 
-@mixin galeriaEstilos ($grid, $size, $backgroud, $aligne, $padding) {
+@mixin galeria__estilos ($grid, $size, $backgroud, $aligne, $padding) {
     grid-area: $grid;
     font-size: $size;
     color: $color-letra-primario;
@@ -27,7 +27,7 @@
     padding: $padding;   
 }
 
-@mixin buttonEstilo ($background) {
+@mixin button__estilo ($background) {
     background-color: $background;
     color: $color-letra-secundario;
     border: 1px solid $color-secundario;

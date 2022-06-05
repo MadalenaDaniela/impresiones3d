@@ -4,14 +4,14 @@
     margin: 2rem; 
     
     &__titulo {
-        @include paginasEstilos (1.8rem, none, center, none);
+        @include paginas__estilos (1.8rem, none, center, none);
     }
 
     &__subtitulo {
-        @include paginasEstilos (1.5rem, 0.5rem, left, $color-secundario);
+        @include paginas__estilos (1.5rem, 0.5rem, left, $color-secundario);
     }
 
     &__texto {
-        @include paginasEstilos (1.5rem, none, right, none);
+        @include paginas__estilos (1.5rem, none, right, none);
     }
 }

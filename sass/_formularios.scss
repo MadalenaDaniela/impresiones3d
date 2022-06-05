@@ -30,8 +30,8 @@ label {
     color: $imput-letra;
 }
 
-.buttonEnviar {
-    @include buttonEstilo ($color-secundario); 
+.button__enviar {
+    @include button__estilo ($color-secundario); 
 
     &:hover {
         background-color: $color-principal;

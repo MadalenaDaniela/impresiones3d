@@ -1,4 +1,4 @@
-.errorTitulo {
+.error__titulo {
     font-family: $font-pricipal;
     text-align: center;
     justify-content: center;
@@ -16,7 +16,7 @@
             
     }
 }
-.imgError {
+.img__error {
     margin: 1rem;
     text-align: center;
     border-radius: 2rem;
@@ -25,8 +25,8 @@
     width: 40vw; 
 }
             
-.buttonError {
-    @include buttonEstilo ($color-principal);
+.button__error {
+    @include button__estilo ($color-principal);
                    
         &:hover {
             background-color: $color-principal;
@@ -36,7 +36,7 @@
         }
 }
 
-.footerError {
+.footer__error {
     background-color: $color-secundario;
     color: $color-letra-secundario;
     font-size: 1rem;

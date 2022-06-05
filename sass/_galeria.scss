@@ -10,31 +10,31 @@
                          "img5 img5";   
 
         &__titulo {
-            @include galeriaEstilos (galeriaTitulo, 2rem, none, center, none);
+            @include galeria__estilos (galeriaTitulo, 2rem, none, center, none);
         }
 
         &__subtitulo {
-            @include galeriaEstilos (galeriaSubtitulo, 1.5rem, $color-secundario, none, 1rem);   
+            @include galeria__estilos (galeriaSubtitulo, 1.5rem, $color-secundario, none, 1rem);   
         }
 
         .imagen1 {
-            @include galeriaFotos (img1);
+            @include galeria__fotos (img1);
         }
         .imagen2 {
-            @include galeriaFotos (img2);
+            @include galeria__fotos (img2);
         }
         .imagen3 {
-            @include galeriaFotos (img3);
+            @include galeria__fotos (img3);
         }
         .imagen4 {
-            @include galeriaFotos (img4);
+            @include galeria__fotos (img4);
         }
         .imagen5 {
-            @include galeriaFotos (img5);
+            @include galeria__fotos (img5);
             height: 100vh;
             margin: 1rem;
 
-            .galeriaTexto {
+            .galeria__texto {
                 font-size: 1.5rem;
                 text-align: center;
                 margin: 0.5rem;
@@ -50,7 +50,7 @@
     width: 40vw;
 }
 
-.imagenParrafo {
+.imagen__parrafo {
     font-family: $font-pricipal;
     font-size: 1.2rem;
 }
