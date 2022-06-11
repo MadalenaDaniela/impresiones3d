@@ -94,7 +94,7 @@ a {
     color: white; } }
 
 .iframe {
-  height: 10vh;
+  height: 15vh;
   width: 20vw; }
 
 .galeria {
@@ -371,7 +371,7 @@ body {
     .footer__ubicacion {
       font-size: 1rem; }
       .footer__ubicacion .iframe {
-        height: 10vh;
+        height: 20vh;
         width: 35vw; }
     .footer__derechos {
       font-size: 0.8rem; }
@@ -458,8 +458,8 @@ body {
     .footer__ubicacion {
       font-size: 1rem; }
       .footer__ubicacion .iframe {
-        height: 10vh;
-        width: 35vw; }
+        height: 20vh;
+        width: 40vw; }
     .footer__derechos {
       font-size: 0.8rem; }
   .galeria {

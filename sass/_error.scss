@@ -28,12 +28,12 @@
 .button__error {
     @include button__estilo ($color-principal);
                    
-        &:hover {
-            background-color: $color-principal;
-            border: 1px solid $color-principal;
-            transform: scale(1.1);
-            transition: all 3s;
-        }
+    &:hover {
+        background-color: $color-principal;
+        border: 1px solid $color-principal;
+        transform: scale(1.1);
+        transition: all 3s;
+    }
 }
 
 .footer__error {
