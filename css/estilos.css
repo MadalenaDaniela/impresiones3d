@@ -235,7 +235,7 @@ h4 a:active {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 1.3rem;
   line-height: 1.9;
-  background-image: url(../recursos/fondoContacto1.jpg);
+  background-color: #0d3963;
   background-size: cover;
   border-radius: 1rem;
   width: 50vw;
